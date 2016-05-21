@@ -172,6 +172,7 @@ void setup() {
    Serial.begin(115200);
     //while (!Serial) ;
    
+	analogWriteFrequency(IR_LED_PIN, 40000);
    if (DebugOutput==DEBUG_FULLOUTPUT)  
      Serial.println("FLipMouse started, Flexible Assistive Button Interface ready !");
 
